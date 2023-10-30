@@ -33,7 +33,7 @@ if ping -c1 google.com &>/dev/null
 then
     conexion="$(echo -e "${verde}SI${borra_colores})"
 else
-    conexion="$(echo -e "${rojo}no${borra_colores})"
+    conexion="$(echo -e "${rojo}NO${borra_colores})"
 fi
 }
 
@@ -108,8 +108,17 @@ software=$(echo -e "${verde}SI${borra_colores}")
 done
 }
 
+# EMPIEZA LO GORDO
+conexion
+software_necesario
+actualizar_script
+
 if [ $software_necesario="SI" ] || [ $actualizado="SI" ]
 then
     echo "ENTRA"; read p
 else
     echo "no entra"; read p
+fi
+
+
+
