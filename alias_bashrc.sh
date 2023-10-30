@@ -116,7 +116,7 @@ done
 clear
 conexion
 echo ""
-if [ $conexion="SI" ]
+if [ $conexion = "SI" ]
 then
     echo -e " Conexion a internet = $conexion"
     #software_necesario
@@ -126,7 +126,7 @@ else
     #software_necesario
 fi
 
-if [ $actualizar_script="SI" ]
+if [ $actualizar_script = "SI" ]
 then
     echo "11111"
 fi
