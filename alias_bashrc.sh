@@ -126,7 +126,7 @@ else
     #software_necesario
 fi
 
-if [ $actualizar_script = "SI" ]
+if [ $actualizado = "SI" ]
 then
     echo "11111"
 fi
