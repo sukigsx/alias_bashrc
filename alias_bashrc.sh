@@ -33,8 +33,7 @@ if ping -c1 google.com &>/dev/null
 then
     conexion=$(echo -e "${verde}SI${borra_colores}")
 else
-    #conexion=$(echo -e "${rojo}NO${borra_colores}")
-    conexion="NO"
+    conexion=$(echo -e "${verde}NO${borra_colores}")
 fi
 }
 
@@ -116,23 +115,23 @@ done
 clear
 conexion
 echo ""
-if [ $conexion="SI" ]
+if [ $conexion = "SI" ]
 then
     echo -e " Conexion a internet = $conexion"
-    #software_necesario
-    #actualizar_script
+    software_necesario
+    actualizar_script
 else
     echo "esta es la otra"
-    #software_necesario
+    software_necesario
 fi
 
-#if [ $actualizado = "SI" ]
-#then
-#    echo "11111"
-#else
-#    echo "popo"
-#fi
+if [ $actualizado = "SI" ]
+then
+    echo "11111"
+else
+    echo "popo"
+fi
 
-#echo "todo ok"; read p
+echo "todo ok"; read p
 
 
