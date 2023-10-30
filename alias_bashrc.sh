@@ -77,6 +77,9 @@ fi
 
 #funcion software necesario
 software_necesario(){
+echo ""
+echo -e " Comprobando el software necesario."
+echo ""
 software="which git diff ping figlet xdotool wmctrl" #ponemos el foftware a instalar separado por espacion dentro de las comillas ( soft1 soft2 soft3 etc )
 for paquete in $software
 do
@@ -109,9 +112,14 @@ done
 }
 
 # EMPIEZA LO GORDO
+clear
+echo ""
 conexion
+echo -e " Conexion a internet = $conexion"
+
 software_necesario
 actualizar_script
+echo -e " ¿ El script $0 esta actualizado ? = $actualizado"
 
 if [ $software_necesario="SI" ] || [ $actualizado="SI" ]
 then
