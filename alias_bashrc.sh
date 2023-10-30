@@ -33,7 +33,7 @@ if ping -c1 google.com &>/dev/null
 then
     conexion=$(echo -e "${verde}SI${borra_colores}")
 else
-    conexion=$(echo -e "${verde}NO${borra_colores}")
+    conexion=$(echo -e "${rojo}NO${borra_colores}")
 fi
 }
 
@@ -119,7 +119,6 @@ echo -e " Conexion a internet = $conexion"
 
 software_necesario
 actualizar_script
-echo -e " ¿ El script $0 esta actualizado ? = $actualizado"
 
 if [ $software_necesario="SI" ] || [ $actualizado="SI" ]
 then
