@@ -125,6 +125,7 @@ else
     #no hay internet
     echo -e " Conexion a internet = $conexion"
     software_necesario
+    echo "ssssssssssssssssssssssssssss"
 fi
 
 echo "continuamos"
