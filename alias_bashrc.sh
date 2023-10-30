@@ -31,9 +31,9 @@ exit
 conexion(){
 if ping -c1 google.com &>/dev/null
 then
-    conexion="$(echo -e "${verde}SI${borra_colores})"
+    conexion=$(echo -e "${verde}SI${borra_colores}")
 else
-    conexion="$(echo -e "${rojo}NO${borra_colores})"
+    conexion=$(echo -e "${verde}NO${borra_colores}")
 fi
 }
 
