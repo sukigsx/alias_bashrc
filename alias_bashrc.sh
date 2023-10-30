@@ -119,15 +119,16 @@ echo ""
 if [ $conexion="SI" ]
 then
     echo -e " Conexion a internet = $conexion"
-    software_necesario
-    actualizar_script
+    #software_necesario
+    #actualizar_script
 else
-    software_necesario
+    echo "esta es la otra"
+    #software_necesario
 fi
 
 if [ $actualizar_script="SI" ]
 then
-    echo ""
+    echo "11111"
 fi
 
 echo "todo ok"; read p
