@@ -129,6 +129,8 @@ fi
 if [ $actualizado = "SI" ]
 then
     echo "11111"
+else
+    echo "popo"
 fi
 
 echo "todo ok"; read p
