@@ -118,14 +118,12 @@ echo ""
 if [ $conexion = "SI" ]
 then
     #si hay internet
-    echo -e " Conexion a internet = $conexion"
     software_necesario
     actualizar_script
 else
     #no hay internet
-    echo -e " Conexion a internet = $conexion"
     software_necesario
-    echo "ssssssssssssssssssssssssssss"
+    echo ""
 fi
 
 echo "continuamos"
