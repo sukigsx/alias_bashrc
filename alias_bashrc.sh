@@ -113,19 +113,21 @@ done
 
 # EMPIEZA LO GORDO
 clear
-echo ""
 conexion
-echo -e " Conexion a internet = $conexion"
-
-software_necesario
-actualizar_script
-
-if [ $software_necesario="SI" ] || [ $actualizado="SI" ]
+echo ""
+if [ $conexion="SI" ]
 then
-    echo "ENTRA"; read p
-else
-    echo "no entra"; read p
+    echo -e " Conexion a internet = $conexion"
+    software_necesario
+    actualizar_script
 fi
 
+software_necesario
+if [ $actualizar_script="SI" ]
+then
+    echo ""
+fi
+
+echo "todo ok"; read p
 
 
