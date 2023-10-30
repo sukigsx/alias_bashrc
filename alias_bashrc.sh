@@ -116,7 +116,7 @@ done
 clear
 conexion
 echo ""
-if [ $conexion = "SI" ]
+if [ $conexion="SI" ]
 then
     echo -e " Conexion a internet = $conexion"
     #software_necesario
@@ -133,6 +133,6 @@ fi
 #    echo "popo"
 #fi
 
-echo "todo ok"; read p
+#echo "todo ok"; read p
 
 
