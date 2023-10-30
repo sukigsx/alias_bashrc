@@ -31,9 +31,9 @@ exit
 conexion(){
 if ping -c1 google.com &>/dev/null
 then
-    conexion=$(echo -e "${verde}SI${borra_colores}")
+    conexion="SI"
 else
-    conexion=$(echo -e "${verde}NO${borra_colores}")
+    conexion="NO"
 fi
 }
 
@@ -57,7 +57,7 @@ then
     echo ""
     chmod -R +w /tmp/comprobar
     rm -R /tmp/comprobar
-    actualizado=$(echo -e "${verde}SI${borra_colores}")
+    actualizado="SI"
 else
     #hay que actualizar, comprueba y actualiza
     echo ""
@@ -107,7 +107,7 @@ contador="1" #ponemos la variable contador a 1
         fi
     done
 echo -e " [${verde}ok${borra_colores}] $paquete."
-software=$(echo -e "${verde}SI${borra_colores}")
+software="SI"
 done
 }
 
@@ -117,21 +117,20 @@ conexion
 echo ""
 if [ $conexion = "SI" ]
 then
+    #si hay internet
     echo -e " Conexion a internet = $conexion"
     software_necesario
     actualizar_script
 else
-    echo "esta es la otra"
+    #no hay internet
+    echo -e " Conexion a internet = $conexion"
     software_necesario
 fi
 
-if [ $actualizado = "SI" ]
-then
-    echo "11111"
-else
-    echo "popo"
-fi
+echo "continuamos"
 
-echo "todo ok"; read p
+
+
+
 
 
