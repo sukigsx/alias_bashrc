@@ -69,8 +69,7 @@ else
     rm -R /tmp/comprobar
     echo ""
     echo -e "${verde} El script se ha actualizado, es necesario cargarlo de nuevo.${borra_colores}"
-    echo -e "${amarillo} Se cerrara el terminal en 5 segundos.${borra_colores}"
-    sleep 5
+    echo -e ""
     exit
 fi
 }
