@@ -129,10 +129,20 @@ else
 fi
 
 sleep 2
-clear
-echo ""
+# Ruta al archivo .bashrc del usuario actual
+bashrc_file="/home/$(whoami)/.bashrc"
 
-echo "continuamos"
+# Línea que estamos buscando
+line_to_search="source /home/$(whoami)/.config/alias_bashrc_sukigsx"
+
+# Verificar si la línea existe en el archivo .bashrc
+if grep -qF "$line_to_search" "$bashrc_file"; then
+    echo "La línea '$line_to_search' existe en el archivo $bashrc_file."
+else
+    echo "La línea '$line_to_search' no existe en el archivo $bashrc_file."
+fi
+
+
 
 
 
