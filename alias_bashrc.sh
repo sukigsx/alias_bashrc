@@ -136,7 +136,7 @@ bashrc_file='/home/$(whoami)/.bashrc'
 line_to_search="source /home/$(whoami)/.config/alias_bashrc_sukigsx"
 
 # Verificar si la línea existe en el archivo .bashrc
-if grep -qF "source /home/$(whoami)/.config/alias_bashrc_sukigsx" "/home/$(whoami)/.bashrc"; then
+if grep -qF "source /home/$(whoami)/.config/alias_bashrc_sukigsx" '/home/$(whoami)/.bashrc'; then
     echo " Si esta instalado."
 else
     echo " No esta instalado."
