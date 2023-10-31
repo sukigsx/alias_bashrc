@@ -130,7 +130,7 @@ fi
 
 sleep 2
 # Ruta al archivo .bashrc del usuario actual
-bashrc_file="/home/$(whoami)/.bashrc"
+bashrc_file='/home/$(whoami)/.bashrc'
 
 # Línea que estamos buscando
 line_to_search="source /home/$(whoami)/.config/alias_bashrc_sukigsx"
