@@ -145,6 +145,7 @@ echo ""
 echo -e "${rosa}"; figlet -c Instalacion; echo -e "${borra_colores}"
 echo -e ""
 echo 'source /home/$(whoami)/.config/alias_bashrc_sukigsx' >> /home/$(whoami)/.bashrc
+wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://github.com/sukigsx/alias_bashrc/blob/main/alias_bashrc.config
 
 
 
