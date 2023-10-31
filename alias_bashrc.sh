@@ -137,9 +137,9 @@ line_to_search="source /home/$(whoami)/.config/alias_bashrc_sukigsx"
 
 # Verificar si la línea existe en el archivo .bashrc
 if grep -qF "$line_to_search" "$bashrc_file"; then
-    echo "La línea '$line_to_search' existe en el archivo $bashrc_file."
+    echo " Si esta instalado."
 else
-    echo "La línea '$line_to_search' no existe en el archivo $bashrc_file."
+    echo " No esta instalado."
 fi
 
 
