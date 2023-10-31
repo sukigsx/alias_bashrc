@@ -131,7 +131,7 @@ fi
 sleep 2
 
 # Verificar si la línea existe en el archivo .bashrc
-if grep -qF 'source /home/$(whoami)/.config/alias_bashrc_sukigsx' "/home/$(whoami)/.bashrc"; then
+if grep -qF 'source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config' "/home/$(whoami)/.bashrc"; then
     echo -e "${verde} El script${borra_colores} $0 ${verde}ya esta instalado en tu sistema.${borra_colores}"
     echo -e "${verde} Puedes utilizar los comandos para utilizarlo.${borra_colores}"
     echo -e "${verde} Comando = (${borra_colores}opciones_alias${verde}) para listar las opciones.${borra_colores}"
