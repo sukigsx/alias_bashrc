@@ -128,7 +128,7 @@ else
     software_necesario
 fi
 
-clear
+
 echo ""
 
 echo "continuamos"
