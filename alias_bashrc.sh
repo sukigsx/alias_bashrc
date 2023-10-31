@@ -128,7 +128,8 @@ else
     software_necesario
 fi
 
-
+sleep 2
+clear
 echo ""
 
 echo "continuamos"
