@@ -139,7 +139,12 @@ if grep -qF 'source /home/$(whoami)/.config/alias_bashrc_sukigsx' "/home/$(whoam
     exit
 fi
 
-echo " No esta instalado."
+#instala el script
+clear
+echo ""
+echo -e "${rosa}"; figlet -c Instalacion; echo -e "${borra_colores}"
+echo -e ""
+echo 'source /home/$(whoami)/.config/alias_bashrc_sukigsx' >> /home/$(whoami)/.bashrc
 
 
 
