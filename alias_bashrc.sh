@@ -129,18 +129,16 @@ else
 fi
 
 sleep 2
-# Ruta al archivo .bashrc del usuario actual
-bashrc_file='/home/$(whoami)/.bashrc'
-
-# Línea que estamos buscando
-line_to_search="source /home/$(whoami)/.config/alias_bashrc_sukigsx"
 
 # Verificar si la línea existe en el archivo .bashrc
 if grep -qF 'source /home/$(whoami)/.config/alias_bashrc_sukigsx' "/home/$(whoami)/.bashrc"; then
-    echo " Si esta instalado."
-else
-    echo " No esta instalado."
+    echo -e " El script $0 ya esta instalado en tu sistema."
+    echo -e " Puedes utilizar los comandos para utilizarlo."
+    echo -e " Comando = (opciones_alias) para listar las opciones."
+    read p
 fi
+
+echo " No esta instalado."
 
 
 
