@@ -32,8 +32,12 @@ conexion(){
 if ping -c1 google.com &>/dev/null
 then
     conexion="SI"
+    echo ""
+    echo -e " Conexion a internet = ${verde}SI${borra_colores}"
 else
     conexion="NO"
+    echo ""
+    echo -e " Conexion a internet = ${rojo}NO${borra_colores}"
 fi
 }
 
@@ -122,8 +126,10 @@ then
 else
     #no hay internet
     software_necesario
-    echo ""
 fi
+
+clear
+echo ""
 
 echo "continuamos"
 
