@@ -164,6 +164,8 @@ else
         echo ""
         echo -e "${verde} Instalacion completada.${borra_colores}"
         echo ""
+        read -p " Pulsa una tecla para continuar." pause
+        echo ""
         wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
         exit
     else
