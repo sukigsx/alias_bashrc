@@ -138,7 +138,7 @@ then
     clear
     echo ""
     echo -e "${amarillo} -INFORMACION-${borra_colores}"
-    ECHO ""
+    echo ""
     echo -e "${verde} El script${borra_colores} $0 ${verde}ya esta instalado en tu sistema.${borra_colores}"
     echo -e "${verde} Puedes utilizar los comandos para utilizarlo.${borra_colores}"
     echo -e "${verde} Comando = (${borra_colores}opciones_alias${verde}) para listar las opciones.${borra_colores}"
