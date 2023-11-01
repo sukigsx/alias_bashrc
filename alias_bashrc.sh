@@ -143,7 +143,8 @@ then
     echo -e "${verde} Puedes utilizar los comandos para utilizarlo.${borra_colores}"
     echo -e "${verde} Comando = (${borra_colores}opciones_alias${verde}) para listar las opciones.${borra_colores}"
     echo ""
-    read -p " Pulsa una tecla para continuar."
+    read -p " Pulsa una tecla para continuar." pause
+    echo ""
     wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
     exit
 else
@@ -161,7 +162,7 @@ else
     else
         #no hay internet
         echo ""
-        echo -e " ${rojo}NO se puede instalar sin conexion.${borra_colores}"
+        echo -e " ${rojo}NO se puede instalar sin conexiona internet.${borra_colores}"
         echo ""
         wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
         exit
