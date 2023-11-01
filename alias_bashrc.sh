@@ -74,6 +74,7 @@ else
     echo ""
     echo -e "${amarillo} El script se ha actualizado, es necesario cargarlo de nuevo.${borra_colores}"
     echo -e ""
+    read -p " Pulsa una tecla para continuar." pause
     exit
 fi
 }
