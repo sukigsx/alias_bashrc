@@ -158,7 +158,12 @@ else
         echo -e "${verde} Fichero de configuracion ${borra_colores}OK${verde} en ${borra_colores}/home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde}.${borra_colores}"
         echo -e "${verde} Linea de cargar en ${borra_colores}.bashrc${verde} añadida (${borra_colores}source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde})${borra_colores}"
         echo ""
-        sleep 2
+        echo -e "${verde} Instalacion completada.${borra_colores}"
+        echo ""
+        read -p " Pulsa una tecla para continuar." pause
+        echo ""
+        wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+        exit
     else
         #no hay internet
         echo ""
@@ -168,6 +173,3 @@ else
         exit
     fi
 fi
-
-echo ""
-echo " se carga el menu"
