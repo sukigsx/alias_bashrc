@@ -155,6 +155,7 @@ else
         clear
         echo ""
         echo -e "${amarillo} Instalando....${borra_colores}"
+        echo ""
         echo 'source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config' >> /home/$(whoami)/.bashrc
         mkdir /home/$(whoami)/.config/alias_bashrc >/dev/null 2>&1
         wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config >/dev/null 2>&1
