@@ -157,17 +157,34 @@ else
         echo -e "${amarillo} Instalando....${borra_colores}"
         echo ""
         echo 'source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config' >> /home/$(whoami)/.bashrc
-        mkdir /home/$(whoami)/.config/alias_bashrc >/dev/null 2>&1
-        wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config >/dev/null 2>&1
-        echo -e "${verde} Fichero de configuracion ${borra_colores}OK${verde} en ${borra_colores}/home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde}.${borra_colores}"
-        echo -e "${verde} Linea de cargar en ${borra_colores}.bashrc${verde} añadida (${borra_colores}source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde})${borra_colores}"
-        echo ""
-        echo -e "${verde} Instalacion completada.${borra_colores}"
-        echo ""
-        read -p " Pulsa una tecla para continuar." pause
-        echo ""
-        wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
-        exit
+        if [ -d /home/sukigsx/.config/alias_bashrc ]
+        then
+            rm -r /home/$(whoami)/.config/alias_bashrc
+            mkdir /home/$(whoami)/.config/alias_bashrc >/dev/null 2>&1
+            wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config >/dev/null 2>&1
+            echo -e "${verde} Fichero de configuracion ${borra_colores}OK${verde} en ${borra_colores}/home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde}.${borra_colores}"
+            echo -e "${verde} Linea de cargar en ${borra_colores}.bashrc${verde} añadida (${borra_colores}source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde})${borra_colores}"
+            echo ""
+            echo -e "${verde} Instalacion completada.${borra_colores}"
+            echo ""
+            read -p " Pulsa una tecla para continuar." pause
+            echo ""
+            wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+            exit
+
+        else
+            mkdir /home/$(whoami)/.config/alias_bashrc >/dev/null 2>&1
+            wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config >/dev/null 2>&1
+            echo -e "${verde} Fichero de configuracion ${borra_colores}OK${verde} en ${borra_colores}/home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde}.${borra_colores}"
+            echo -e "${verde} Linea de cargar en ${borra_colores}.bashrc${verde} añadida (${borra_colores}source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde})${borra_colores}"
+            echo ""
+            echo -e "${verde} Instalacion completada.${borra_colores}"
+            echo ""
+            read -p " Pulsa una tecla para continuar." pause
+            echo ""
+            wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+            exit
+        fi
     else
         #no hay internet
         echo ""
