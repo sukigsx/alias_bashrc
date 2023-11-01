@@ -153,8 +153,8 @@ else
         #si hay internet
         echo -e ""
         echo 'source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config' >> /home/$(whoami)/.bashrc
-        mkdir /home/$(whoami)/.config/alias_bashrc
-        wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config
+        mkdir /home/$(whoami)/.config/alias_bashrc >/dev/null 2>&1
+        wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config >/dev/null 2>&1
         echo -e " Fichero de configuracion OK en /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config."
         echo -e " Linea de cargar en .bashrc añadida (source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config)"
         echo ""
