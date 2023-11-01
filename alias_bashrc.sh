@@ -155,8 +155,8 @@ else
         echo 'source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config' >> /home/$(whoami)/.bashrc
         mkdir /home/$(whoami)/.config/alias_bashrc >/dev/null 2>&1
         wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config >/dev/null 2>&1
-        echo -e "${azul} Fichero de configuracion ${borra_colores}OK${azul} en ${borra_colores}/home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${azul}.${borra_colores}"
-        echo -e "${azul} Linea de cargar en ${borra_colores}.bashrc${azul} añadida (${borra_colores}source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${azul})${borra_colores}"
+        echo -e "${verde} Fichero de configuracion ${borra_colores}OK${verde} en ${borra_colores}/home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde}.${borra_colores}"
+        echo -e "${verde} Linea de cargar en ${borra_colores}.bashrc${verde} añadida (${borra_colores}source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde})${borra_colores}"
         echo ""
         sleep 2
     else
