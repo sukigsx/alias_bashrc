@@ -137,20 +137,21 @@ if grep -qF 'source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config' "/
     echo -e "${verde} Comando = (${borra_colores}opciones_alias${verde}) para listar las opciones.${borra_colores}"
     read p
     exit
+else
+    if [ $conexion = "SI" ]
+    then
+        #si hay internet
+        echo ""
+        echo -e "${rosa}"; figlet -c Instalacion; echo -e "${borra_colores}"
+        echo -e ""
+        echo 'source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config' >> /home/$(whoami)/.bashrc
+        mkdir /home/$(whoami)/.config/alias_bashrc
+        wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config
+    else
+        #no hay internet
+        echo "no se puede instalar sin conexion"
+    fi
 fi
-
-#instala el script
-clear
-echo ""
-echo -e "${rosa}"; figlet -c Instalacion; echo -e "${borra_colores}"
-echo -e ""
-echo 'source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config' >> /home/$(whoami)/.bashrc
-mkdir /home/$(whoami)/.config/alias_bashrc
-wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config
-
-
-
-
 
 
 
