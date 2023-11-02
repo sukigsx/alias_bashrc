@@ -167,6 +167,7 @@ else
             echo -e "${verde} Linea de cargar en ${borra_colores}.bashrc${verde} añadida (${borra_colores}source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde})${borra_colores}"
             echo ""
             echo -e "${verde} Instalacion completada.${borra_colores}"
+            echo -e "${naranja} Es necesario reiniciar el terminal.${borra_colores}"
             echo ""
             read -p " Pulsa una tecla para continuar." pause
             echo ""
