@@ -19,7 +19,7 @@ clear
 figlet -c Gracias por
 figlet -c utilizar mi
 figlet -c script
-wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz >/dev/null 2>&1
 exit
 }
 
@@ -116,7 +116,7 @@ done
 }
 
 # EMPIEZA LO GORDO
-wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
+wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz >/dev/null 2>&1
 clear
 echo ""
 conexion
@@ -146,7 +146,7 @@ then
     echo ""
     read -p " Pulsa una tecla para continuar." pause
     echo ""
-    wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+    wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz >/dev/null 2>&1
     exit
 else
     if [ $conexion = "SI" ]
@@ -170,7 +170,7 @@ else
             echo ""
             read -p " Pulsa una tecla para continuar." pause
             echo ""
-            wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+            wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz >/dev/null 2>&1
             exit
 
         else
@@ -183,7 +183,7 @@ else
             echo ""
             read -p " Pulsa una tecla para continuar." pause
             echo ""
-            wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+            wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz >/dev/null 2>&1
             exit
         fi
     else
@@ -191,7 +191,7 @@ else
         echo ""
         echo -e " ${rojo}NO se puede instalar sin conexiona internet.${borra_colores}"
         echo ""
-        wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+        wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz >/dev/null 2>&1
         exit
     fi
 fi
