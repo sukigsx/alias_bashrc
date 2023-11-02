@@ -172,7 +172,7 @@ else
             read -p " Pulsa una tecla para continuar." pause
             echo ""
             wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz >/dev/null 2>&1
-            xdotool windowkill `xdotool getactivewindow` 2>&1
+            xdotool windowkill `xdotool getactivewindow` >/dev/null 2>&1
             exit
 
         else
