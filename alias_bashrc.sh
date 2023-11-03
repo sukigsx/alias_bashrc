@@ -101,7 +101,8 @@ contador="1" #ponemos la variable contador a 1
             echo -e ""
             echo -e " ${rojo}No se puede ejecutar el script sin el software necesario.${borra_colores}"
             echo ""; read p
-            ctrl_c
+            echo ""
+            exit
         else #intenta instalar
             echo " Instalando $paquete. Intento $contador/3."
             sudo apt install $paquete -y 2>/dev/null 1>/dev/null 0>/dev/null
