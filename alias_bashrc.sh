@@ -164,8 +164,8 @@ else
             rm -r /home/$(whoami)/.config/alias_bashrc
             mkdir /home/$(whoami)/.config/alias_bashrc >/dev/null 2>&1
             wget -O /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config https://raw.githubusercontent.com/sukigsx/alias_bashrc/main/alias_bashrc.config >/dev/null 2>&1
-            echo -e "${verde} Fichero de configuracion ${borra_colores}OK${verde} en ${borra_colores}/home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde}.${borra_colores}"
-            echo -e "${verde} Linea de cargar en ${borra_colores}.bashrc${verde} añadida (${borra_colores}source /home/$(whoami)/.config/alias_bashrc/alias_bashrc.config${verde})${borra_colores}"
+            echo -e "${verde} Fichero de configuracion =${borra_colores} OK${verde}.${borra_colores}"
+            echo -e "${verde} Linea de carga en ${borra_colores}.bashrc${verde} añadida = ${borra_colores}OK${verde}.${borra_colores}"
             echo ""
             echo -e "${verde} Instalacion completada.${borra_colores}"
             echo -e "${amarillo} Es necesario reiniciar el terminal.${borra_colores}"
