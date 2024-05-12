@@ -33,7 +33,18 @@ Esta función crea un backup de los alias del usuario almacenando una copia del 
 Esta función restaura los alias desde un archivo de backup previamente creado. Verifica si el archivo de backup existe y, si es así, restaura los alias guardados en el archivo .bash_aliases.
 
 # Instalacion
-Simplemente debes clonar el repositorio con la orden: git clone https://github.com/sukigsx/alias_bashrc.git
-Entras en la carpeta y ejecutas alias_bashrc.sh con la orden ./alias_bashrc.sh o bien con bash alias_bashrc.sh
+Simplemente debes clonar el repositorio con la orden:
+
+    git clone https://github.com/sukigsx/alias_bashrc.git
+Entras en la carpeta y ejecutas alias_bashrc.sh con la orden:
+
+    ./alias_bashrc.sh
+o bien:
+
+    bash alias_bashrc.sh
+Tambien puedes utilizar mi script (ejecutar_escripts), en el cual puedes instalar todos mis script del repositorio.
+
+    git clone https://github.com/sukigsx/ejecutar_scripts.git
+# Espero od guste !!!!!!
 
 # ¡Disfruta automatizando tus tareas con este menú interactivo!
