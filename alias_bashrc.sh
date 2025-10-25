@@ -35,9 +35,6 @@ DireccionGithub="https://github.com/sukigsx/alias_bashrc.git" #contiene la direc
         [fzf]="fzf"
         [xdotool]="xdotool"
     )
-    )
-    )
-
 
 #colores
 rojo="\e[0;31m\033[1m" #rojo
