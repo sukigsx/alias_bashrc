@@ -3,7 +3,7 @@
 #colores
 #ejemplo: echo -e "${verde} La opcion (-e) es para que pille el color.${borra_colores}"
 
-rojo="\e[0;31m\033[1m" #rojo
+rojo="\e[0;31m\033[1m" #rojoo
 verde="\e[;32m\033[1m"
 azul="\e[0;34m\033[1m"
 amarillo="\e[0;33m\033[1m"
